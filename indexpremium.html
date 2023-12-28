@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous">
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="Content/logo/logowhite.png" alt="logo" style="width: 6rem; height: 3rem;">
+          </a>
+          <div class="navbar-nav ms-auto">
+            <div class="me-3">
+              <a class="nav-link" href="#target-section">Подобрать авто</a>
+            </div>
+            <div class="me-3">
+              <a class="nav-link" href="#target2">О нас</a>
+            </div>
+            <div class="me-3">
+              <a class="nav-link" href="#target3">Контакты</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="me-3">
+            </div>
+            <!-- Button to trigger the modal -->
+            <button class="btn btn-light me-3" data-bs-toggle="modal" data-bs-target="#myModal">Заказать звонок</button>
+            <a class="navbar-brand" href="#">
+            <img src="Content/icons/account.png" alt="account icon" class="ms-3">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+   <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Введите номер телефона</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Номер телефона">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Отправить</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="banner">
+        <img src="Content/bg/bg1.png">
+    </div>
+    <div class="textandbutton">
+        <div class="text1">
+            Наш автопарк
+        </div>
+        <div id="target-section">
+            <!-- Ваш контент -->
+          </div>
+        <div class="button5" onclick="redirectToFirstPage()">
+            Смотреть все
+        </div>
+    </div>
+    <div class="form1">
+        <div class="buttons1">
+            <div class="button6" onclick="redirectToComfortPage()">
+                <img src="Content/icons/comfort.png">
+                Комфорт
+            </div>
+            <div class="button7" onclick="redirectToJeepPage()">
+                <img src="Content/icons/vnedorojnik.png">
+                Внедорожники
+            </div>
+            <div class="button8" onclick="redirectToSportPage()">
+                <img src="Content/icons/sportcar.png">
+                Спортивные
+            </div>
+            <div class="button9" onclick="redirectToPremiumPage()">
+                <img src="Content/icons/sportcar.png">
+                Премиальные
+            </div>
+            <script>
+                function redirectToComfortPage() {
+                  window.location.href = "indexcomfort.html#target-section";
+                }
+                function redirectToJeepPage() {
+                  window.location.href = "indexjeep.html#target-section";
+                }
+                function redirectToSportPage() {
+                  window.location.href = "indexsport.html#target-section";
+                }
+                function redirectToPremiumPage() {
+                  window.location.href = "indexpremium.html#target-section";
+                }
+                function redirectToFirstPage() {
+                  window.location.href = "index.html#target-section";
+                }
+                </script>
+        </div>
+        <div class="cards">
+                <!-- Карточка товара -->
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="Content/Auto/premium/1.jpg"
+                    alt="BMW X2, 2021, 2,3 л/бензин, 317 л.с."
+                    />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">135 000</div>
+                    <div class="card__price card__price--common">150 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    BMW X2, 2021, 2,3 л/бензин, 317 л.с.
+                </a>
+                <!-- Кнопка добавить Бронировать -->
+                <button class="card__add">Бронировать</button>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="Content/Auto/premium/2.jpg"
+                    alt="Kia Sportage, 2022, 2,3 л/бензин, 317 л.с."
+                    />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">135 000</div>
+                    <div class="card__price card__price--common">150 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Kia Sportage, 2022, 2,3 л/бензин, 317 л.с.
+                </a>
+                <!-- Кнопка добавить Бронировать -->
+                <button class="card__add">Бронировать</button>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="index23.html" class="card__image">
+                    <img
+                    src="Content/Auto/premium/3.jpg"
+                    alt="Lexus IS, 2018, 2,3 л/бензин, 317 л.с."
+                    />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">135 000</div>
+                    <div class="card__price card__price--common">150 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="index23.html" class="card__title">
+                    Lexus IS, 2018, 2,3 л/бензин, 317 л.с.
+                </a>
+                <!-- Кнопка добавить Бронировать -->
+                <button class="card__add">Бронировать</button>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="Content/Auto/premium/4.jpg"
+                    alt="Jaguar XF, 2012, 2,3 л/бензин, 317 л.с."
+                    />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">135 000</div>
+                    <div class="card__price card__price--common">150 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Jaguar XF, 2012, 2,3 л/бензин, 317 л.с.
+                </a>
+                <!-- Кнопка добавить Бронировать -->
+                <button class="card__add">Бронировать</button>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="Content/Auto/premium/5.jpg"
+                    alt="Toyota RAV4,  2017, 2,3 л/бензин, 317 л.с."
+                    />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">135 000</div>
+                    <div class="card__price card__price--common">150 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Toyota RAV4,  2017, 2,3 л/бензин, 317 л.с.
+                </a>
+                <!-- Кнопка добавить Бронировать -->
+                <button class="card__add">Бронировать</button>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="Content/Auto/premium/6.jpg"
+                    alt="2021 Mazda 6, 2021, 2,3 л/бензин, 317 л.с."
+                    />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">135 000</div>
+                    <div class="card__price card__price--common">150 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    2021 Mazda 6, 2021, 2,3 л/бензин, 317 л.с.
+                </a>
+                <!-- Кнопка добавить Бронировать -->
+                <button class="card__add">Бронировать</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="target2">
+            <!-- Элемент, к которому будет осуществлен переход -->
+          </div>
+    </div>
+
+    <div class="text2">
+        Индекс драйв – премиальный сервис по прокату эксклюзивных автомобилей Арендуйте авто и наслаждайтесь поездкой. Мы – топовый российский сервис по аренде машин для предпринимателей, иностранных гостей столицы и просто любителей дорогих и комфортабельных авто, отражающих статус своего владельцаt
+    </div>
+    <div class="text3">
+        Эти роскошные автомобили стали неотъемлемой частью жизни успешных бизнесменов, звезд шоу-бизнеса и просто людей, стремящихся испытать неповторимые ощущения от комфорта и мощи.
+    </div>
+    <div class="block1">
+        <div class="bg2">
+                <div class="text4">
+                    Индекс Драйв – премиальный сервис по прокату эксклюзивных автомобилей
+                </div>
+                <div class="block2">
+                <div class="text5">
+                    Арендуйте авто и наслаждайтесь поездкой Мы – топовый российский сервис по аренде машин для предпринимателей, иностранных гостей столицы и просто любителей дорогих и комфортабельных авто, отражающих статус своего владельца. <br>
+                    <p style="font-size: 1rem; margin-top: 2rem;">Открываем доступ к премиальным моделям в нестандартной комплектации. Забронировать автомобиль в этих городах можно дистанционно.</p>
+                </div>
+                <div class="form2">
+                        <input type="text" placeholder="Ваше Имя *">
+                        <input type="text" placeholder="Номер телефона *">
+                        <button class="button10">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="text6">
+        3 шага, чтобы арендовать авто
+    </div>
+    <div class="block3">
+        <div class="rasnos1">
+            <div class="img1">
+                <img src="Content/icons/1.svg">
+            </div>
+            <div class="text7">
+                <b>Подать заявку</b> <BR>Оформляете заявку на сайте, связываетесь по телефону или в мессенджерах и бронируете автомобиль
+            </div>
+        </div>
+        <div class="rasnos2">
+            <div class="img1">
+                <img src="Content/icons/2.svg">
+            </div>
+            <div class="text7">
+                <b>Договор</b> <br>Подписываете договор на аренду автомобиля, вносите оплату и страховой депозит
+            </div>
+        </div>
+        <div class="rasnos3">
+            <div class="img1">
+                <img src="Content/icons/3.svg">
+            </div>
+            <div class="text7">
+                <b>Получение</b> <br>Забираете авто в нашем салоне или мы можем доставить в любую точку Москвы
+            </div>
+        </div>
+    </div>
+    <div class="text6">
+        7 причин заказать аренду авто в Индекс Драйв
+    </div>
+    <div class="block4">
+        <div class="rasnos4">
+            <div class="photo1">
+                <img src="Content/icons/1.png">
+            </div>
+            <div class="text7">
+                <b>Страховка</b><br>Все наши автомобили застрахованы по ОСАГО И КАСКО
+            </div>
+        </div>
+        <div class="rasnos4">
+            <div class="photo1">
+                <img src="Content/icons/2.png">
+            </div>
+            <div class="text7">
+                <b>Оплата</b><br>Любая удобная для вас форма оплаты (нал/безнал, банковский перевод)
+            </div>
+        </div>
+        <div class="rasnos4">
+            <div class="photo1">
+                <img src="Content/icons/3.png">
+            </div>
+            <div class="text7">
+                <b>Автопарк</b><br>Весь автопарк в отличном состоянии и всегда пополняется новыми моделями
+            </div>
+        </div>
+        <div class="rasnos4">
+            <div class="photo1">
+                <img src="Content/icons/4.png">
+            </div>
+            <div class="text7">
+                <b>Ценовая политика</b><br>Всегда доступные цены и приятные бонусы постоянным клиентам
+            </div>
+        </div>
+        <div class="rasnos4">
+            <div class="photo1">
+                <img src="Content/icons/5.png">
+            </div>
+            <div class="text7">
+                <b>Ценовая политика</b><br>Всегда доступные цены и приятные бонусы постоянным клиентам
+            </div>
+        </div>
+        <div class="rasnos4">
+            <div class="photo1">
+                <img src="Content/icons/6.png">
+            </div>
+            <div class="text7">
+                <b>Скорость</b><br>Оформление аренды любого авто в течении не более 15 минут
+            </div>
+        </div>
+    </div>
+    <div class="text6">
+        Наши партнеры
+    </div>
+    <div class="partners">
+        <div class="partner1">
+            <img src="Content/partners/1.png" alt="">
+        </div>
+        <div class="partner1">
+            <img src="Content/partners/2.png" alt="">
+        </div>
+        <div class="partner1">
+            <img src="Content/partners/3.png" alt="">
+        </div>
+        <div class="partner1">
+            <img src="Content/partners/4.png" alt="">
+        </div>
+        <div class="partner1">
+            <img src="Content/partners/5.png" alt="">
+        </div>
+        <div class="partner1">
+            <img src="Content/partners/6.png" alt="">
+        </div>
+        <div class="partner1">
+            <img src="Content/partners/7.png" alt="">
+        </div>
+        <div id="target3">
+            <!-- Элемент, к которому будет осуществлен переход -->
+          </div>
+    </div>
+
+    <div class="text6">
+        Остались вопросы?
+    </div>
+    <div class="text8">
+        Менеджер свяжется с вами в течение 15 минут и сможет ответить на все интересующие вопросы
+    </div>
+    <div class="form2">
+        <input type="text" placeholder="Ваше Имя *">
+        <input type="text" placeholder="Номер телефона *">
+        <button class="button10">Забронировать</button>
+    </div>
+    <footer class="footer bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="Content/logo/logowhite.png" class="logo1">
+              <br><br>
+              <p style="color: grey;">
+                © 2020 Автосалон "Автосалон'<br>
+                Все права защищены<br>
+                г. Пермь, ул. Пушкина, д. 107А<br>
+                info@indexdrive.ru<br>
+                +7 (888)-111-11-11<br>
+                Рабочие часы: с 9:00 до 18:00
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Подобрать авто<br>
+                Контакты<br>
+                О нас<br>
+                Вакансии<br>
+                Мы на карте
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

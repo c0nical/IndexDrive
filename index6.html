@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-Панель</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container d-flex justify-content-between align-items-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="Content/logo/logowhite.png" alt="logo" style="width: 6rem; height: 3rem;">
+              </a>
+              <div class="navbar-nav ms-auto">
+                <div class="me-3">
+                  <a class="nav-link" href="#target-section">Подобрать авто</a>
+                </div>
+                <div class="me-3">
+                  <a class="nav-link" href="#target2">О нас</a>
+                </div>
+                <div class="me-3">
+                  <a class="nav-link" href="#target3">Контакты</a>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="me-3">
+                </div>
+                <!-- Button to trigger the modal -->
+                <button class="btn btn-light me-3" data-bs-toggle="modal" data-bs-target="#myModal">Заказать звонок</button>
+                <a class="navbar-brand" href="index3.html">
+                <img src="Content/icons/account.png" alt="account icon" class="ms-3">
+                </a>
+              </div>
+            </div>
+          </nav>
+        </header>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#add-product">Добавить товар</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#available-cars">Доступные автомобили на прокат</a>
+            </li>
+        </ul>
+
+        <div id="add-product" class="tab-content mt-3">
+            <h2>Добавить товар</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="car-name" class="form-label">Название автомобиля</label>
+                    <input type="text" class="form-control" id="car-name">
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Цена (руб/сутки)</label>
+                    <input type="text" class="form-control" id="price">
+                </div>
+                <div class="mb-3">
+                    <label for="engine" class="form-label">Двигатель (л/бензин)</label>
+                    <input type="text" class="form-control" id="engine">
+                </div>
+                <div class="mb-3">
+                    <label for="power" class="form-label">Мощность (л/сек)</label>
+                    <input type="text" class="form-control" id="power">
+                </div>
+                <div class="mb-3">
+                    <label for="car-type" class="form-label">Вид автомобиля</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="car-type" id="business" value="Бизнес">
+                        <label class="form-check-label" for="business">Бизнес</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="car-type" id="premium" value="Премиум">
+                        <label class="form-check-label" for="premium">Премиум</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="car-type" id="sport" value="Спорт">
+                        <label class="form-check-label" for="sport">Спорт</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="car-type" id="suv" value="Внедорожник">
+                        <label class="form-check-label" for="suv">Внедорожник</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="car-type" id="comfort" value="Комфорт">
+                        <label class="form-check-label" for="comfort">Комфорт</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Добавить товар</button>
+            </form>
+        </div>
+
+        <div id="available-cars" class="tab-content mt-3">
+            <h2>Доступные автомобили на прокат</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Вид автомобиля</th>
+                        <th scope="col">Марка и модель</th>
+                        <th scope="col">Цена (7 150 руб/сут.)</th>
+                        <th scope="col">Объём (2.3 л/б)</th>
+                        <th scope="col">Мощность (317 л.с.)</th>
+                        <th scope="col">Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Бизнес</td>
+                        <td>Mercedes-Benz E-Class</td>
+                        <td>7 150</td>
+                        <td>2.3</td>
+                        <td>317</td>
+                        <td>
+                            <button class="btn btn-white">
+                                <img src="Content/icons/edit.png" alt="Изменить">
+                            </button>
+                            <button class="btn btn-white">
+                                <img src="Content/icons/bin.png" alt="Удалить">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Премиум</td>
+                        <td>Audi A8</td>
+                        <td>7 150</td>
+                        <td>2.3</td>
+                        <td>317</td>
+                        <td>
+                            <button class="btn btn-white">
+                                <img src="Content/icons/edit.png" alt="Изменить">
+                            </button>
+                            <button class="btn btn-white">
+                                <img src="Content/icons/bin.png" alt="Удалить">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Спорт</td>
+                        <td>Porsche 911</td>
+                        <td>7 150</td>
+                        <td>2.3</td>
+                        <td>317</td>
+                        <td>
+                            <button class="btn btn-white">
+                                <img src="Content/icons/edit.png" alt="Изменить">
+                            </button>
+                            <button class="btn btn-white">
+                                <img src="Content/icons/bin.png" alt="Удалить">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Внедорожник</td>
+                        <td>Land Rover Range Rover</td>
+                        <td>7 150</td>
+                        <td>2.3</td>
+                        <td>317</td>
+                        <td>
+                            <button class="btn btn-white">
+                                <img src="Content/icons/edit.png" alt="Изменить">
+                            </button>
+                            <button class="btn btn-white">
+                                <img src="Content/icons/bin.png" alt="Удалить">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+    <footer class="footer bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="Content/logo/logowhite.png" class="logo1">
+              <br><br>
+              <p style="color: grey;">
+                © 2020 Автосалон "Автосалон'<br>
+                Все права защищены<br>
+                г. Пермь, ул. Пушкина, д. 107А<br>
+                info@indexdrive.ru<br>
+                +7 (888)-111-11-11<br>
+                Рабочие часы: с 9:00 до 18:00
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Подобрать авто<br>
+                Контакты<br>
+                О нас<br>
+                Вакансии<br>
+                Мы на карте
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

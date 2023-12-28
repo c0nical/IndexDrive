@@ -1,0 +1,806 @@
+html {
+  overflow-x: hidden;
+}
+
+.headmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #181818;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F4F4F4;
+}
+
+.button1 {
+    background-color: #181818;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 0.5rem;
+}
+
+.button2 {
+    background-color: #181818;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 0.5rem;
+}
+
+.button3 {
+    background-color: #181818;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    width: 5rem;
+    height:5rem;
+}
+
+.buttunmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+}
+
+.numandbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+}
+
+.button4 {
+    background-color: #181818;
+    color: white;
+    border: 2px;
+    border-radius: 0%;
+    border-style:solid;
+    border-color: #F4F4F4;
+    cursor: pointer;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.accounticon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+/* Скрыть модальное окно по умолчанию */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Отобразить модальное окно при активации */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Закрыть кнопку */
+.close {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .banner img {
+      max-height: 100%;
+      width: auto;
+  }
+}
+
+
+.textandbutton {
+    align-items: center;
+    display: flex;
+    margin: 2rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #1F1F1F;
+}
+
+.text1 {
+    display: flex;
+    padding: 0rem;
+    margin-right: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: #1F1F1F;
+}
+
+.button5 {
+    color: #1F1F1F;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #1F1F1F;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    transition-duration: 0.4s;
+}
+
+.button6 {
+    background-color: #181818;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 0.5rem;
+}
+
+.button7 {
+    background-color: #181818;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 0.5rem;
+}
+
+.button8 {
+    background-color: #181818;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 0.5rem;
+}
+
+.button9 {
+    background-color: #181818;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 0.5rem;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+} */
+.card {
+    width: 250px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 15px;
+    transition: 0.2s;
+    position: relative;
+    height: 500px;
+    background-color: white;
+  }
+  
+  /* При наведении на карточку - меняем цвет тени */
+  .card:hover {
+    box-shadow: 4px 8px 16px rgba(145, 145, 145, 0.2);
+  }
+  
+  .card__top {
+    flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+    position: relative;
+    overflow: hidden; /* Скрываем, что выходит за пределы */
+  }
+  
+  /* Контейнер для картинки */
+  .card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+    transition: 0.2s;
+  }
+  
+  /* При наведении - увеличиваем картинку */
+  .card__image:hover > img {
+    transform: scale(1.1);
+  }
+  
+  /* Размещаем скидку на товар относительно изображения */
+  .card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #1f1f1f;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+  
+  .card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+    padding: 10px;
+  }
+  
+  .card__prices {
+    display: flex;
+    margin-bottom: 10px;
+    flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+  }
+  
+  .card__price::after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+  }
+  
+  .card__price--discount {
+    font-weight: 700;
+    font-size: 19px;
+    color: #414141;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .card__price--discount::before {
+    content: "Со скидкой";
+    font-weight: 400;
+    font-size: 13px;
+    color: #bfbfbf;
+  }
+  
+  .card__price--common {
+    font-weight: 400;
+    font-size: 17px;
+    color: #606060;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+  }
+  
+  .card__price--common::before {
+    content: "Обычная";
+    font-weight: 400;
+    font-size: 13px;
+    color: #bfbfbf;
+  }
+  
+  .card__title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+  }
+  
+  .card__title:hover {
+    color: #929292;
+  }
+  
+  .card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #1f1f1f;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #1f1f1f;
+    border-radius: 15px;
+    cursor: pointer; /* Меняем курсор при наведении */
+    transition: 0.2s;
+    margin-top: auto; /* Прижимаем кнопку к низу карточки */
+  }
+  
+  .card__add:hover {
+    border: 1px solid #1f1f1f;
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+
+  .cards {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 185px);
+    width: 100%;
+    max-width: 1300px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 100px; /* Отступ между колонками */
+    row-gap: 40px; /* Отступ между рядами */
+    margin: 2rem auto;
+  }
+  .text2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left;
+    color: #1F1F1F;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+.text3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #535353;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg2 {
+  background-image: url(Content/bg/bg2.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  border-radius: 30px;
+  margin-bottom: 5rem;
+}
+
+.text4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.block2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.text5 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 98%;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form2 input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.2s;
+  background-color: #181818;
+  border: none;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.button10 {
+  background-color: #181818;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 2rem;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  border-radius: 0.5rem;
+}
+
+.button20 {
+  background-color: #181818;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 2rem;
+  margin: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  transition-duration: 0.4s;
+  border-radius: 0.5rem;
+}
+
+.text6 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  color: #1f1f1f;
+  margin-bottom: 5rem;
+}
+
+  .block3 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rasnos1 {
+    display: flex;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 2rem;
+    text-align: left;
+    border-radius: 15px;
+    transition: 0.2s;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5rem;
+    height: 250px;
+  }
+  .rasnos2 {
+    display: flex;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.2s;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5rem;
+    width: 100%;
+    height: 250px;
+  }
+  .rasnos3 {
+    display: flex;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.2s;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5rem;
+    height: 250px;
+  }
+
+  .rasnos4 {
+    display: grid;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.2s;
+    border-radius: 15px;
+    margin: 5rem;
+  }
+  .icon {
+    max-width: 50%;
+    margin: auto;
+}
+
+.card-body {
+    color: black;
+}
+
+  .text7 {
+    margin-left: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    color: black;
+  }
+
+  .block4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 3rem));
+    width: 100%;
+    max-width: 1000px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 30px; /* Отступ между колонками */
+    row-gap: 20px; /* Отступ между рядами */
+    margin: 2rem auto;
+  }
+
+  .partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 5rem;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+
+.partner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: 1rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    height: 3rem;
+    flex-basis: calc(33.33% - 2rem); /* Adjust this value to control the number of partners per row */
+    max-width: calc(33.33% - 2rem); /* Adjust this value to control the number of partners per row */
+}
+
+  .text8 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+    color: #444444;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top:0rem;
+    margin-bottom: 5rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #1F1F1F;
+    border-radius: 25px 25px 0 0;
+  }
+
+.footer1 {
+  word-wrap: break-word;
+}
+
+  P {
+    color: #F4F4F4;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+    margin-bottom: 5rem;
+    line-height: 3;
+    word-wrap: break-word;
+  }
+
+  .logo1 {
+    width: 6rem;
+    height:3rem;
+}
+
+.footer2 {
+  word-wrap: break-word;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #FF8F0B, #FFE600);
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-control,
+  .btn {
+    padding-top: 1rem;
+    width: 100%;
+  }
